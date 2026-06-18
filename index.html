@@ -1,38 +1,403 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Ramandeep Singh</title>
-  <style>
-    body {
-      font-family: Arial;
-      text-align: center;
-      padding: 50px;
-      background: #0f172a;
-      color: white;
-    }
-    a {
-      display: inline-block;
-      margin: 10px;
-      padding: 10px 20px;
-      background: #38bdf8;
-      color: black;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramandeep Singh | Portfolio</title>
+    
+    <!-- SEO and Open Graph Meta Tags -->
+    <meta name="description" content="Portfolio of Ramandeep Singh - Flutter & Android Developer.">
+    <meta property="og:title" content="Ramandeep Singh | Portfolio">
+    <meta property="og:description" content="Portfolio of Ramandeep Singh - Flutter, Android & AI Developer based in Delhi.">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Ramandeep Singh</h1>
-  <p>B.Tech CSE | Flutter & Android Developer</p>
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
 
-  <a href="resume.pdf">View Resume</a>
-  <a href="https://github.com/ramanexc">GitHub</a>
-  <a href="https://www.linkedin.com/in/raman-exc/">LinkedIn</a>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container nav-container">
+          <a href="#" class="logo">r~amanexc.</a>
+            <button class="menu-btn" id="menuBtn" aria-label="Menu">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-  <h2>Projects</h2>
-  <p>🚀 AI-powered dashboard app (Flutter + Gemini API)</p>
-  <p>📱 Android apps using Firebase</p>
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="container hero-content">
+            <p class="hero-subtitle">Hi, my name is</p>
+            <h1 class="hero-title">Ramandeep Singh.</h1>
+            <p class="hero-desc">
+                I'm a <strong id="typing-text"></strong><span class="typing-cursor"></span> focused on building robust, scalable, and intelligent applications. I enjoy crafting modern, offline-first mobile apps and integrating AI solutions to solve real-world problems.
+            </p>
+            <div class="btn-group">
+                <a href="ramandeep_singh_resume.pdf" target="_blank" class="btn btn-primary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                    Resume
+                </a>
+                <a href="https://github.com/ramanexc" target="_blank" class="btn btn-outline">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    GitHub
+                </a>
+                <a href="https://linkedin.com/in/raman-exc/" target="_blank" class="btn btn-outline">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
 
+    <!-- About Section -->
+    <section id="about" class="reveal">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Hello! I'm Ramandeep, an enthusiastic software developer currently pursuing my <span class="highlight">B.Tech in Computer Science and Engineering at GTBIT, Delhi (2024–2028)</span>. I maintain a strong academic record with a <span class="highlight">CGPA of 8.563</span>.</p>
+                    <p>My journey in development is driven by a passion for solving real-world problems. I specialize in the Flutter ecosystem and Android native development, frequently leveraging Firebase and modern APIs like Gemini to create intelligent, responsive mobile and web applications.</p>
+                    <p>Whether it's building a top-tier disaster coordination platform or an offline-first cross-platform task manager, I focus on clean architecture, performance, and delivering an exceptional user experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="reveal">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            
+            <div class="skills-container">
+                <div class="skills-category">
+                    <h3>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+                        Mobile
+                    </h3>
+                    <div class="skills-list">
+                        <span class="skill-badge">Flutter</span>
+                        <span class="skill-badge">Dart</span>
+                        <span class="skill-badge">Android</span>
+                        <span class="skill-badge">Cross-platform</span>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+                        Backend & Data
+                    </h3>
+                    <div class="skills-list">
+                        <span class="skill-badge">Firebase Firestore</span>
+                        <span class="skill-badge">Firebase Auth</span>
+                        <span class="skill-badge">Cloud Functions</span>
+                        <span class="skill-badge">Firebase Storage</span>
+                        <span class="skill-badge">Hive DB</span>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                        APIs & AI
+                    </h3>
+                    <div class="skills-list">
+                        <span class="skill-badge">Gemini AI API</span>
+                        <span class="skill-badge">Google Maps API</span>
+                        <span class="skill-badge">Google Places API</span>
+                        <span class="skill-badge">REST APIs</span>
+                    </div>
+                </div>
+
+                <div class="skills-category">
+                    <h3>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                        Languages & Tools
+                    </h3>
+                    <div class="skills-list">
+                        <span class="skill-badge">Java</span>
+                        <span class="skill-badge">C</span>
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">HTML/CSS</span>
+                        <span class="skill-badge">SQL</span>
+                        <span class="skill-badge">Provider</span>
+                        <span class="skill-badge">Git & GitHub</span>
+                        <span class="skill-badge">Linux/Bash</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="reveal">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">ReliefNet</h3>
+                        <span class="project-date">Mar 2026 – Present</span>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">Gemini AI</span>
+                        <span class="tech-tag">Google Maps</span>
+                    </div>
+                    <div class="project-desc">
+                        <p>Production-grade AI-powered disaster relief coordination platform.</p>
+                        <ul>
+                            <li>Real-time crisis dashboard with Gemini AI report analysis.</li>
+                            <li>4-stage volunteer workflow with GPS geofencing.</li>
+                            <li>Offline sync and role-based access control.</li>
+                            <li>NGO web admin portal for streamlined management.</li>
+                        </ul>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ReliefNet/ReliefNet" target="_blank">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            GitHub
+                        </a>
+                        <a href="https://reliefnet.github.io/ReliefNet/" target="_blank">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Simplist</h3>
+                        <span class="project-date">2025</span>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Flutter</span>
+                        <span class="tech-tag">Dart</span>
+                        <span class="tech-tag">Firestore</span>
+                        <span class="tech-tag">Hive</span>
+                    </div>
+                    <div class="project-desc">
+                        <p>Cross-platform task manager built for Android & Windows environments.</p>
+                        <ul>
+                            <li>Firestore real-time sync across devices.</li>
+                            <li>Offline persistence using Hive database.</li>
+                            <li>Local push notifications via flutter_local_notifications.</li>
+                            <li>Shipped as production APK + Windows installer.</li>
+                        </ul>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ramanexc/Simplist-To-Do-app" target="_blank">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Dummy Project 3 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">WeatherX</h3>
+                        <span class="project-date">Fall 2024</span>
+                    </div>
+                    <div class="project-tech">
+                        <span class="tech-tag">Android</span>
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">REST API</span>
+                    </div>
+                    <div class="project-desc">
+                        <p>A sleek, minimalist native Android weather tracking application.</p>
+                        <ul>
+                            <li>Integration with OpenWeatherMap API for accurate data.</li>
+                            <li>Dynamic UI updates reflecting current weather conditions.</li>
+                            <li>Precise location-based tracking using device GPS.</li>
+                        </ul>
+                    </div>
+                    <div class="project-links">
+                        <a href="#">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="reveal">
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievement-card">
+                <div class="achievement-icon">🏆</div>
+                <h3 class="achievement-title">Top 106 Globally</h3>
+                <p class="achievement-subtitle">Google Solution Challenge 2026</p>
+                <p class="achievement-desc">
+                    Ranked among the Top 106 out of over 85,000 participating teams worldwide for the development of ReliefNet. Recognized for creating significant humanitarian and disaster response impact using Google technologies.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="reveal">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-info">
+                <p>I'm currently looking for new opportunities and collaborations. Feel free to reach out via the form below or drop me an email directly!</p>
+            </div>
+
+            <!-- Note: To make this form work, sign up at Formspree.io and replace "YOUR_FORM_ID" with your actual form ID -->
+            <form action="https://formspree.io/f/xvznjrzr" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" class="form-control" required placeholder="John Doe">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="_replyto" class="form-control" required placeholder="john@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" class="form-control" required placeholder="How can I help you?"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary form-submit">Send Message</button>
+            </form>
+
+            <div class="contact-info" style="margin-bottom: 0;">
+                <div class="contact-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent);"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    <a href="mailto:ramandeep3sep@gmail.com">ramandeep3sep@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent);"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                    <a href="tel:+919310543116">+91 93105 43116</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Ramandeep Singh. Built with HTML, CSS & Vanilla JS.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Scroll Progress Bar
+        const scrollProgress = document.getElementById('scroll-progress');
+        window.addEventListener('scroll', () => {
+            const totalScroll = document.documentElement.scrollTop;
+            const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrollValue = `${(totalScroll / windowHeight) * 100}%`;
+            scrollProgress.style.width = scrollValue;
+        });
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const navLinks = document.getElementById('navLinks');
+        const menuIcon = menuBtn.querySelector('svg');
+
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            if (navLinks.classList.contains('active')) {
+                menuIcon.innerHTML = '<line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line>';
+            } else {
+                menuIcon.innerHTML = '<line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>';
+            }
+        });
+
+        // Close menu on link click
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                menuIcon.innerHTML = '<line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>';
+            });
+        });
+
+        // Add shadow to navbar on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 20) {
+                nav.style.boxShadow = '0 10px 30px rgba(0,0,0,0.1)';
+            } else {
+                nav.style.boxShadow = 'none';
+            }
+        });
+
+        // Scroll Reveal Animation (Intersection Observer)
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealOptions = {
+            threshold: 0.15,
+            rootMargin: "0px 0px -50px 0px"
+        };
+        
+        const revealObserver = new IntersectionObserver(function(entries, observer) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                }
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target); // Stop observing once revealed
+            });
+        }, revealOptions);
+
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // Typing Effect
+        const typingText = document.getElementById('typing-text');
+        const words = ["Flutter Developer", "Android Developer", "Problem Solver"];
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function type() {
+            const currentWord = words[wordIndex];
+            
+            if (isDeleting) {
+                charIndex--;
+            } else {
+                charIndex++;
+            }
+
+            typingText.textContent = currentWord.substring(0, charIndex);
+
+            let typeSpeed = isDeleting ? 40 : 80;
+
+            if (!isDeleting && charIndex === currentWord.length) {
+                typeSpeed = 2000; // Pause at end of word
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+                typeSpeed = 500; // Pause before typing new word
+            }
+
+            setTimeout(type, typeSpeed);
+        }
+
+        // Start typing effect after a short delay
+        setTimeout(type, 1000);
+    </script>
 </body>
 </html>
